@@ -1,0 +1,114 @@
+C51 COMPILER V9.53.0.0   SYN6288                                                           06/25/2019 09:31:39 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE SYN6288
+OBJECT MODULE PLACED IN SYN6288.OBJ
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE SYN6288.C COMPACT OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          /***************************飞音云电子****************************
+   2          **  工程名称：YS-SYN6288语音合成配套程序
+   3          **      CPU: STC89LE52
+   4          **      晶振：22.1184MHZ
+   5          **      波特率：9600 bit/S
+   6          **      配套产品信息：YS-SYN6288语音合成模块
+   7          **                http://yuesheng001.taobao.com
+   8          **  作者：zdings
+   9          **  联系：751956552@qq.com
+  10          **  修改日期：2012.8.25
+  11          **  说明：。。
+  12          /***************************飞音云电子******************************/
+  13          
+  14          #include "config.h"
+  15          #include "string.h"
+  16          #include "USART.h"
+  17          
+  18          
+  19          /**************芯片设置命令*********************/
+  20          uint8_t SYN_StopCom[]={0xFD,0X00,0X02,0X02,0XFD};//停止合成
+  21          uint8_t SYN_SuspendCom[]={0XFD,0X00,0X02,0X03,0XFC};//暂停合成
+  22          uint8_t SYN_RecoverCom[]={0XFD,0X00,0X02,0X04,0XFB};//恢复合成
+  23          uint8_t SYN_ChackCom[]={0XFD,0X00,0X02,0X21,0XDE};//状态查询
+  24          uint8_t SYN_PowerDownCom[]={0XFD,0X00,0X02,0X88,0X77};//进入POWER DOWN 状态命令
+  25          
+  26          /***********************************************/
+  27          
+  28          
+  29          
+  30          /***********************************************************
+  31          * 名    称：  YS-SYN6288 文本合成函数
+  32          * 功    能：  发送合成文本到SYN6288芯片进行合成播放
+  33          * 入口参数：Music(背景音乐选择):0无背景音乐。1-15：相关背景音乐
+  34                      *HZdata:文本指针变量 
+  35          * 出口参数：
+  36          * 说    明： 本函数只用于文本合成，具备背景音乐选择。默认波特率9600bps。                                         
+  37          * 调用方法：例： SYN_FrameInfo（0，“乐声电子科技”）；
+  38          **********************************************************/
+  39          void SYN_FrameInfo(uint8_t Music,uint8_t *HZdata)
+  40          {
+  41   1      /****************需要发送的文本**********************************/ 
+  42   1                       unsigned  char  Frame_Info[50];
+  43   1               unsigned  char  HZ_Length;  
+  44   1                       unsigned  char  ecc  = 0;                      //定义校验字节
+  45   1                   unsigned  int i=0; 
+  46   1                       HZ_Length =strlen(HZdata);                     //需要发送文本的长度
+  47   1       
+  48   1      /*****************帧固定配置信息**************************************/           
+  49   1                       Frame_Info[0] = 0xFD ;                         //构造帧头FD
+  50   1                       Frame_Info[1] = 0x00 ;                         //构造数据区长度的高字节
+  51   1                       Frame_Info[2] = HZ_Length + 3;                 //构造数据区长度的低字节
+  52   1                       Frame_Info[3] = 0x01 ;                         //构造命令字：合成播放命令                               
+  53   1                       Frame_Info[4] = 0x01 | Music<<4 ;  //构造命令参数：背景音乐设定
+  54   1      
+  55   1      /*******************校验码计算***************************************/           
+C51 COMPILER V9.53.0.0   SYN6288                                                           06/25/2019 09:31:39 PAGE 2   
+
+  56   1                       for(i = 0; i<5; i++)                                   //依次发送构造好的5个帧头字节
+  57   1                   {  
+  58   2                       ecc=ecc^(Frame_Info[i]);               //对发送的字节进行异或校验      
+  59   2                   }
+  60   1      
+  61   1                       for(i= 0; i<HZ_Length; i++)            //依次发送待合成的文本数据
+  62   1                   {  
+  63   2                       ecc=ecc^(HZdata[i]);                           //对发送的字节进行异或校验              
+  64   2                   }           
+  65   1      /*******************发送帧信息***************************************/            
+  66   1                        memcpy(&Frame_Info[5], HZdata, HZ_Length);
+  67   1                        Frame_Info[5+HZ_Length]=ecc;
+  68   1                        PrintString1_cnt(Frame_Info,5+HZ_Length+1);
+  69   1      }
+  70          
+  71          
+  72          /***********************************************************
+  73          * 名    称： void  main(void)
+  74          * 功    能： 主函数     程序入口
+  75          * 入口参数： *Info_data:固定的配置信息变量 
+  76          * 出口参数：
+  77          * 说    明：本函数用于配置，停止合成、暂停合成等设置 ，默认波特率9600bps。                                       
+  78          * 调用方法：通过调用已经定义的相关数组进行配置。 
+  79          **********************************************************/
+  80          void YS_SYN_Set(uint8_t *Info_data)
+  81          {
+  82   1              uint8_t Com_Len;
+  83   1              Com_Len =strlen(Info_data);
+  84   1              PrintString1_cnt(Info_data,Com_Len);
+  85   1      }
+  86          
+  87          
+  88          
+  89          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    213    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =     25      59
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,9 @@
+".\Objects\ADC.obj",
+".\Objects\delay.obj",
+".\Objects\Keypress.obj",
+".\Objects\oled.obj",
+".\Objects\SYN6288.obj",
+".\Objects\USART.obj",
+".\Objects\main.obj" 
+TO ".\Objects\1" 
+PRINT(".\Listings\1.m51") RAMSIZE(256) 

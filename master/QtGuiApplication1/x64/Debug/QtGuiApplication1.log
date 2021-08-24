@@ -1,0 +1,3 @@
+﻿  QtGuiApplication1.cpp
+c:\users\昕\source\repos\qtguiapplication1\qtguiapplication1\wzexcel.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  QtGuiApplication1.vcxproj -> C:\Users\昕\source\repos\QtGuiApplication1\x64\Debug\QtGuiApplication1.exe

@@ -1,0 +1,919 @@
+Microsoft (R) COFF/PE Dumper Version 14.16.27027.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file QtGuiApplication1.exe
+
+File Type: EXECUTABLE IMAGE
+
+  Section contains the following imports:
+
+    Qt5Core.dll
+             140024288 Import Address Table
+             14002EAF8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         B08 ?dispose@QListData@@SAXPEAUData@1@@Z
+                         B07 ?dispose@QListData@@QEAAXXZ
+                         ADA ?detach_grow@QListData@@QEAAPEAUData@1@PEAHH@Z
+                        1924 ?toInt@QString@@QEBAHPEA_NH@Z
+                        1933 ?toLatin1@QString@@QEGBA?AVQByteArray@@XZ
+                         768 ?arg@QString@@QEBA?AV1@HHHVQChar@@@Z
+                         7C1 ?begin@QListData@@QEBAPEAPEAXXZ
+                         B62 ?end@QListData@@QEBAPEAPEAXXZ
+                         170 ??0QRegExp@@QEAA@AEBVQString@@W4CaseSensitivity@Qt@@W4PatternSyntax@0@@Z
+                         2DC ??1QRegExp@@QEAA@XZ
+                        1151 ?objectName@QObject@@QEBA?AVQString@@XZ
+                        1698 ?setObjectName@QObject@@QEAAXAEBVQString@@@Z
+                         168 ??0QRect@@QEAA@HHHH@Z
+                        1A8C ?translate@QCoreApplication@@SA?AVQString@@PEBD00H@Z
+                        17D7 ?start@QThread@@QEAAXW4Priority@1@@Z
+                        18C1 ?terminate@QThread@@QEAAXXZ
+                        1312 ?qt_metacall@QThread@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        134E ?qt_metacast@QThread@@UEAAPEAXPEBD@Z
+                        1841 ?staticMetaObject@QThread@@2UQMetaObject@@B
+                         B2A ?dynamicMetaObject@QObjectData@@QEBAPEAUQMetaObject@@XZ
+                         4AF ??6QDebug@@QEAAAEAV0@AEBVQString@@@Z
+                        1964 ?toNativeSeparators@QDir@@SA?AVQString@@AEBV2@@Z
+                         366 ??4QDateTime@@QEAAAEAV0@$$QEAV0@@Z
+                        1982 ?toSize@QVariant@@QEBA?AVQSize@@XZ
+                        1975 ?toRect@QVariant@@QEBA?AVQRect@@XZ
+                        196F ?toPoint@QVariant@@QEBA?AVQPoint@@XZ
+                        19B5 ?toTime@QVariant@@QEBA?AVQTime@@XZ
+                        1901 ?toDate@QVariant@@QEBA?AVQDate@@XZ
+                         A66 ?data@QByteArray@@QEAAPEADXZ
+                         286 ??1QByteArray@@QEAA@XZ
+                          60 ??0QChar@@QEAA@D@Z
+                         907 ?connectSlotsByName@QMetaObject@@SAXPEAVQObject@@@Z
+                        1A27 ?tr@QMetaObject@@QEBA?AVQString@@PEBD0H@Z
+                         BE9 ?eventFilter@QObject@@UEAA_NPEAV1@PEAVQEvent@@@Z
+                         AFC ?disconnectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
+                         9E5 ?customEvent@QObject@@MEAAXPEAVQEvent@@@Z
+                         904 ?connectNotify@QObject@@MEAAXAEBVQMetaMethod@@@Z
+                         866 ?childEvent@QObject@@MEAAXPEAVQChildEvent@@@Z
+                         F8F ?killTimer@QObject@@QEAAXH@Z
+                        17E6 ?startTimer@QObject@@QEAAHHW4TimerType@Qt@@@Z
+                         C96 ?fromAscii_helper@QString@@CAPEAU?$QTypedArrayData@G@@PEBDH@Z
+                         4BB ??6QDebug@@QEAAAEAV0@PEBD@Z
+                         296 ??1QDebug@@QEAA@XZ
+                        1147 ?number@QString@@SA?AV1@NDH@Z
+                        1143 ?number@QString@@SA?AV1@HH@Z
+                         CDB ?fromUtf8@QString@@SA?AV1@PEBDH@Z
+                         747 ?append@QString@@QEAAAEAV1@AEBV1@@Z
+                         2F0 ??1QString@@QEAA@XZ
+                         1A8 ??0QString@@QEAA@AEBV0@@Z
+                         A92 ?debug@QMessageLogger@@QEBA?AVQDebug@@XZ
+                         2A9 ??1QFile@@UEAA@XZ
+                          BF ??0QFile@@QEAA@AEBVQString@@@Z
+                        19AE ?toString@QVariant@@QEBA?AVQString@@XZ
+                         745 ?append@QListData@@QEAAPEAPEAXXZ
+                        1926 ?toInt@QVariant@@QEBAHPEA_N@Z
+                         21C ??0QVariant@@QEAA@AEBVQString@@@Z
+                         22E ??0QVariant@@QEAA@_N@Z
+                         221 ??0QVariant@@QEAA@H@Z
+                         30B ??1QVariant@@QEAA@XZ
+                         22B ??0QVariant@@QEAA@XZ
+                        1229 ?property@QObject@@QEBA?AVQVariant@@PEBD@Z
+                        16CB ?setProperty@QObject@@QEAA_NPEBDAEBVQVariant@@@Z
+                         ECA ?isNull@QString@@QEBA_NXZ
+                         4DE ??8@YA_NAEBVQString@@0@Z
+                         3E7 ??4QString@@QEAAAEAV0@AEBV0@@Z
+                         1B1 ??0QString@@QEAA@XZ
+                         BE1 ?event@QThread@@UEAA_NPEAVQEvent@@@Z
+                         4C1 ??6QDebug@@QEAAAEAV0@_K@Z
+                         2FD ??1QThread@@UEAA@XZ
+                         1DB ??0QThread@@QEAA@PEAVQObject@@@Z
+                        1757 ?shared_null@QListData@@2UData@1@B
+                        18D3 ?timerEvent@QObject@@MEAAXPEAVQTimerEvent@@@Z
+                         BD7 ?event@QObject@@UEAA_NPEAVQEvent@@@Z
+                        1B55 ?wait@QThread@@QEAA_NK@Z
+                        1B75 ?warning@QMessageLogger@@QEBAXPEBDZZ
+                        1093 ?methodOffset@QMetaObject@@QEBAHXZ
+                        122F ?propertyOffset@QMetaObject@@QEBAHXZ
+                        1090 ?methodCount@QMetaObject@@QEBAHXZ
+                         B9A ?enumeratorCount@QMetaObject@@QEBAHXZ
+                        122A ?propertyCount@QMetaObject@@QEBAHXZ
+                         D9F ?indexOfSignal@QMetaObject@@QEBAHPEBD@Z
+                         DA1 ?indexOfSlot@QMetaObject@@QEBAHPEBD@Z
+                         D99 ?indexOfEnumerator@QMetaObject@@QEBAHPEBD@Z
+                         D9D ?indexOfProperty@QMetaObject@@QEBAHPEBD@Z
+                         D95 ?indexOfClassInfo@QMetaObject@@QEBAHPEBD@Z
+                         4AE ??6QDebug@@QEAAAEAV0@AEBVQByteArray@@@Z
+                        1123 ?noquote@QDebug@@QEAAAEAV1@XZ
+                         95B ?convert@QVariant@@QEBA_NHPEAX@Z
+                        1940 ?toList@QVariant@@QEBA?AV?$QList@VQVariant@@@@XZ
+                        1904 ?toDateTime@QVariant@@QEBA?AVQDateTime@@XZ
+                        19B2 ?toStringList@QVariant@@QEBA?AVQStringList@@XZ
+                        190E ?toDouble@QVariant@@QEBANPEA_N@Z
+                        18EB ?toBool@QVariant@@QEBA_NXZ
+                        19CA ?toULongLong@QVariant@@QEBA_KPEA_N@Z
+                        1951 ?toLongLong@QVariant@@QEBA_JPEA_N@Z
+                        19C1 ?toUInt@QVariant@@QEBAIPEA_N@Z
+                         95A ?convert@QVariant@@QEAA_NH@Z
+                         806 ?canConvert@QVariant@@QEBA_NH@Z
+                        1B22 ?userType@QVariant@@QEBAHXZ
+                         204 ??0QVariant@@QEAA@AEBV?$QList@VQVariant@@@@@Z
+                         209 ??0QVariant@@QEAA@AEBVQDateTime@@@Z
+                         21D ??0QVariant@@QEAA@AEBVQStringList@@@Z
+                         207 ??0QVariant@@QEAA@AEBVQByteArray@@@Z
+                         225 ??0QVariant@@QEAA@M@Z
+                         22D ??0QVariant@@QEAA@_K@Z
+                         22C ??0QVariant@@QEAA@_J@Z
+                         224 ??0QVariant@@QEAA@I@Z
+                         22A ??0QVariant@@QEAA@W4Type@0@@Z
+                        18CD ?time@QDateTime@@QEBA?AVQTime@@XZ
+                         A80 ?date@QDateTime@@QEBA?AVQDate@@XZ
+                         F42 ?isValid@QDateTime@@QEBA_NXZ
+                         EBE ?isNull@QDateTime@@QEBA_NXZ
+                         294 ??1QDateTime@@QEAA@XZ
+                          8A ??0QDateTime@@QEAA@AEBVQDate@@AEBVQTime@@W4TimeSpec@Qt@@@Z
+                          8C ??0QDateTime@@QEAA@XZ
+                        10E8 ?msec@QTime@@QEBAHXZ
+                        156F ?second@QTime@@QEBAHXZ
+                        10B3 ?minute@QTime@@QEBAHXZ
+                         D65 ?hour@QTime@@QEBAHXZ
+                         F58 ?isValid@QTime@@QEBA_NXZ
+                         1E0 ??0QTime@@QEAA@HHHH@Z
+                         A84 ?day@QDate@@QEBAHXZ
+                        10C3 ?month@QDate@@QEBAHXZ
+                        1BC6 ?year@QDate@@QEBAHXZ
+                          85 ??0QDate@@QEAA@HHH@Z
+                        14FB ?resize@QByteArray@@QEAAXH@Z
+                        1B72 ?warning@QMessageLogger@@QEBA?AVQDebug@@XZ
+                         2CE ??1QObject@@UEAA@XZ
+                         148 ??0QObject@@QEAA@PEAV0@@Z
+                        12FF ?qt_metacall@QObject@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        133B ?qt_metacast@QObject@@UEAAPEAXPEBD@Z
+                        12C9 ?qstrcmp@@YAHPEBD0@Z
+                        1755 ?shared_null@QHashData@@2U1@B
+                        1758 ?shared_null@QMapDataBase@@2U1@B
+                        182E ?staticMetaObject@QObject@@2UQMetaObject@@B
+                         2C5 ??1QMetaStringTable@@QEAA@XZ
+                        1B98 ?writeBlob@QMetaStringTable@@QEBAXPEAD@Z
+                         7D9 ?blobSize@QMetaStringTable@@QEBAHXZ
+                         B8B ?enter@QMetaStringTable@@QEAAHAEBVQByteArray@@@Z
+                         136 ??0QMetaStringTable@@QEAA@AEBVQByteArray@@@Z
+                        1AEB ?unlock@QMutexLocker@@QEAAXXZ
+                         FF5 ?lock@QMutex@@QEAAXXZ
+                         2CA ??1QMutex@@QEAA@XZ
+                         142 ??0QMutex@@QEAA@W4RecursionMode@0@@Z
+                        1B3A ?value@QSettings@@QEBA?AVQVariant@@AEBVQString@@AEBV2@@Z
+                         867 ?childGroups@QSettings@@QEBA?AVQStringList@@XZ
+                         B6E ?endGroup@QSettings@@QEAAXXZ
+                         7CB ?beginGroup@QSettings@@QEAAXAEBVQString@@@Z
+                         2E5 ??1QSettings@@UEAA@XZ
+                         187 ??0QSettings@@QEAA@AEBVQString@@W4Format@0@PEAVQObject@@@Z
+                        1B36 ?value@QMetaClassInfo@@QEBAPEBDXZ
+                         E80 ?isEnumType@QMetaProperty@@QEBA_NXZ
+                         EEC ?isReadable@QMetaProperty@@QEBA_NXZ
+                        1B21 ?userType@QMetaProperty@@QEBAHXZ
+                        1AC4 ?type@QMetaProperty@@QEBA?AW4Type@QVariant@@XZ
+                        1ACE ?typeName@QMetaProperty@@QEBAPEBDXZ
+                        10F8 ?name@QMetaProperty@@QEBAPEBDXZ
+                        1B49 ?valueToKey@QMetaEnum@@QEBAPEBDH@Z
+                         F88 ?keyToValue@QMetaEnum@@QEBAHPEBDPEA_N@Z
+                        1095 ?methodType@QMetaMethod@@QEBA?AW4MethodType@1@XZ
+                        1ACD ?typeName@QMetaMethod@@QEBAPEBDXZ
+                        1094 ?methodSignature@QMetaMethod@@QEBA?AVQByteArray@@XZ
+                        1276 ?qHash@@YAIAEBVQUuid@@I@Z
+                         561 ??BQUuid@@QEBA?AU_GUID@@XZ
+                         1FA ??0QUuid@@QEAA@AEBU_GUID@@@Z
+                         58A ??MQUuid@@QEBA_NAEBV0@@Z
+                         506 ??8QUuid@@QEBA_NAEBV0@@Z
+                         ECD ?isNull@QUuid@@QEBA_NXZ
+                        19AD ?toString@QUuid@@QEBA?AVQString@@XZ
+                         1FC ??0QUuid@@QEAA@AEBVQString@@@Z
+                         1FF ??0QUuid@@QEAA@XZ
+                         BFD ?exists@QFile@@SA_NAEBVQString@@@Z
+                         919 ?constData@QVariant@@QEBAPEBXXZ
+                         A75 ?data@QVariant@@QEAAPEAXXZ
+                        1105 ?nameToType@QVariant@@SA?AW4Type@1@PEBD@Z
+                        18ED ?toByteArray@QVariant@@QEBA?AVQByteArray@@XZ
+                         E56 ?isDetached@QVariant@@QEBA_NXZ
+                        1AD0 ?typeName@QVariant@@QEBAPEBDXZ
+                        1ACA ?type@QVariant@@QEBA?AW4Type@1@XZ
+                         408 ??4QVariant@@QEAAAEAV0@$$QEAV0@@Z
+                         200 ??0QVariant@@QEAA@$$QEAV0@@Z
+                         409 ??4QVariant@@QEAAAEAV0@AEBV0@@Z
+                         226 ??0QVariant@@QEAA@N@Z
+                         202 ??0QVariant@@QEAA@AEBV0@@Z
+                         223 ??0QVariant@@QEAA@HPEBXI@Z
+                         222 ??0QVariant@@QEAA@HPEBX@Z
+                        1115 ?nextNode@QHashData@@SAPEAUNode@1@PEAU21@@Z
+                         C91 ?free_helper@QHashData@@QEAAXP6AXPEAUNode@1@@Z@Z
+                        1434 ?rehash@QHashData@@QEAAXH@Z
+                         ADD ?detach_helper@QHashData@@QEAAPEAU1@P6AXPEAUNode@1@PEAX@ZP6AX0@ZHH@Z
+                         725 ?allocateNode@QHashData@@QEAAPEAXH@Z
+                         C8D ?freeData@QMapDataBase@@SAXPEAU1@@Z
+                         99C ?createData@QMapDataBase@@SAPEAU1@XZ
+                         C90 ?freeTree@QMapDataBase@@QEAAXPEAUQMapNodeBase@@H@Z
+                         9AA ?createNode@QMapDataBase@@QEAAPEAUQMapNodeBase@@HHPEAU2@_N@Z
+                        1405 ?recalcMostLeftNode@QMapDataBase@@QEAAXXZ
+                         C8F ?freeNodeAndRebalance@QMapDataBase@@QEAAXPEAUQMapNodeBase@@@Z
+                        1117 ?nextNode@QMapNodeBase@@QEBAPEBU1@XZ
+                        1408 ?receivers@QObject@@IEBAHPEBD@Z
+                        1771 ?signalsBlocked@QObject@@QEBA_NXZ
+                         996 ?create@QMetaType@@SAPEAXHPEBX@Z
+                        1AC6 ?type@QMetaType@@SAHAEBVQByteArray@@@Z
+                        141C ?registerNormalizedTypedef@QMetaType@@SAHAEBVQByteArray@@H@Z
+                        141A ?registerNormalizedType@QMetaType@@SAHAEBVQByteArray@@P6AXPEAX@ZP6APEAX1PEBX@ZHV?$QFlags@W4TypeFlag@QMetaType@@@@PEBUQMetaObject@@@Z
+                         BAD ?erase@QListData@@QEAAPEAPEAXPEAPEAX@Z
+                        13FA ?realloc@QListData@@QEAAXH@Z
+                         AD2 ?detach@QListData@@QEAAPEAUData@1@H@Z
+                        1271 ?qHash@@YAIAEBVQString@@I@Z
+                        126A ?qHash@@YAIAEBVQByteArray@@I@Z
+                        190C ?toDouble@QString@@QEBANPEA_N@Z
+                         8DF ?compare@QString@@QEBAHAEBV1@W4CaseSensitivity@Qt@@@Z
+                         CE3 ?fromWCharArray@QString@@SA?AV1@PEB_WH@Z
+                         CA0 ?fromLatin1@QString@@SA?AV1@AEBVQByteArray@@@Z
+                         CA1 ?fromLatin1@QString@@SA?AV1@PEBDH@Z
+                        1934 ?toLatin1@QString@@QEHAA?AVQByteArray@@XZ
+                        1B28 ?utf16@QString@@QEBAPEBGXZ
+                        1456 ?remove@QString@@QEAAAEAV1@HH@Z
+                         5D1 ??YQString@@QEAAAEAV0@VQChar@@@Z
+                         74D ?append@QString@@QEAAAEAV1@VQLatin1String@@@Z
+                        1AA8 ?trimmed@QString@@QEGBA?AV1@XZ
+                        19E3 ?toUpper@QString@@QEHAA?AV1@XZ
+                         B85 ?endsWith@QString@@QEBA_NVQLatin1String@@W4CaseSensitivity@Qt@@@Z
+                        109E ?mid@QString@@QEBA?AV1@HH@Z
+                         FBE ?left@QString@@QEBA?AV1@H@Z
+                         FB0 ?lastIndexOf@QString@@QEBAHVQLatin1String@@HW4CaseSensitivity@Qt@@@Z
+                         FAF ?lastIndexOf@QString@@QEBAHVQChar@@HW4CaseSensitivity@Qt@@@Z
+                         D8F ?indexOf@QString@@QEBAHVQLatin1String@@HW4CaseSensitivity@Qt@@@Z
+                         D8E ?indexOf@QString@@QEBAHVQChar@@HW4CaseSensitivity@Qt@@@Z
+                         764 ?arg@QString@@QEBA?AV1@AEBV1@HVQChar@@@Z
+                         769 ?arg@QString@@QEBA?AV1@IHHVQChar@@@Z
+                         780 ?at@QString@@QEBA?BVQChar@@H@Z
+                         88C ?clear@QString@@QEAAXXZ
+                        1AD8 ?unicode@QString@@QEBAPEBVQChar@@XZ
+                        1AB2 ?truncate@QString@@QEAAXH@Z
+                         3E5 ??4QString@@QEAAAEAV0@$$QEAV0@@Z
+                         1B0 ??0QString@@QEAA@VQLatin1String@@@Z
+                         1AF ??0QString@@QEAA@VQChar@@@Z
+                         34E ??4QByteRef@@QEAAAEAV0@D@Z
+                         55D ??BQByteRef@@QEBADXZ
+                        113E ?number@QByteArray@@SA?AV1@HH@Z
+                        17B4 ?split@QByteArray@@QEBA?AV?$QList@VQByteArray@@@@D@Z
+                        14C5 ?replace@QByteArray@@QEAAAEAV1@PEBD0@Z
+                        14C3 ?replace@QByteArray@@QEAAAEAV1@HHPEBD@Z
+                        1448 ?remove@QByteArray@@QEAAAEAV1@HH@Z
+                         DD1 ?insert@QByteArray@@QEAAAEAV1@HPEBD@Z
+                         73D ?append@QByteArray@@QEAAAEAV1@AEBV1@@Z
+                         740 ?append@QByteArray@@QEAAAEAV1@PEBD@Z
+                         73F ?append@QByteArray@@QEAAAEAV1@D@Z
+                        11F2 ?prepend@QByteArray@@QEAAAEAV1@AEBV1@@Z
+                        1953 ?toLower@QByteArray@@QEGBA?AV1@XZ
+                         86E ?chop@QByteArray@@QEAAXH@Z
+                        1AB1 ?truncate@QByteArray@@QEAAXH@Z
+                         B81 ?endsWith@QByteArray@@QEBA_NPEBD@Z
+                         B80 ?endsWith@QByteArray@@QEBA_ND@Z
+                        17F8 ?startsWith@QByteArray@@QEBA_NPEBD@Z
+                        17F6 ?startsWith@QByteArray@@QEBA_NAEBV1@@Z
+                        109C ?mid@QByteArray@@QEBA?AV1@HH@Z
+                         FBA ?left@QByteArray@@QEBA?AV1@H@Z
+                         FA7 ?lastIndexOf@QByteArray@@QEBAHDH@Z
+                         D85 ?indexOf@QByteArray@@QEBAHPEBDH@Z
+                         D84 ?indexOf@QByteArray@@QEBAHDH@Z
+                         77C ?at@QByteArray@@QEBADH@Z
+                         883 ?clear@QByteArray@@QEAAXXZ
+                         915 ?constData@QByteArray@@QEBAPEBDXZ
+                         A67 ?data@QByteArray@@QEBAPEBDXZ
+                         55B ??BQByteArray@@QEBAPEBDXZ
+                         349 ??4QByteArray@@QEAAAEAV0@$$QEAV0@@Z
+                          54 ??0QByteArray@@QEAA@$$QEAV0@@Z
+                         34B ??4QByteArray@@QEAAAEAV0@PEBD@Z
+                         34A ??4QByteArray@@QEAAAEAV0@AEBV0@@Z
+                          55 ??0QByteArray@@QEAA@AEBV0@@Z
+                          58 ??0QByteArray@@QEAA@PEBDH@Z
+                          5A ??0QByteArray@@QEAA@XZ
+                        12C8 ?qstrcmp@@YAHAEBVQByteArray@@PEBD@Z
+                        12C7 ?qstrcmp@@YAHAEBVQByteArray@@0@Z
+                          67 ??0QChar@@QEAA@UQLatin1Char@@@Z
+                         6C5 ?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z
+                        112A ?normalizedType@QMetaObject@@SA?AVQByteArray@@PEBD@Z
+                        1129 ?normalizedSignature@QMetaObject@@SA?AVQByteArray@@PEBD@Z
+                         871 ?classInfo@QMetaObject@@QEBA?AVQMetaClassInfo@@H@Z
+                        1227 ?property@QMetaObject@@QEBA?AVQMetaProperty@@H@Z
+                         B97 ?enumerator@QMetaObject@@QEBA?AVQMetaEnum@@H@Z
+                        108E ?method@QMetaObject@@QEBA?AVQMetaMethod@@H@Z
+                         123 ??0QMessageLogger@@QEAA@PEBDH0@Z
+
+    Qt5Gui.dll
+             140024B70 Import Address Table
+             14002F3E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                        4B62 ?green@QColor@@QEBAHXZ
+                         937 ?blue@QColor@@QEBAHXZ
+                        4CD2 ?invalidate@QColor@@AEAAXXZ
+                          A3 ??0QFont@@QEAA@AEBVQString@@HH_N@Z
+                          A1 ??0QFont@@QEAA@AEBV0@@Z
+                         DE3 ?family@QFont@@QEBA?AVQString@@XZ
+                        5115 ?pointSize@QFont@@QEBAHXZ
+                        5C23 ?weight@QFont@@QEBAHXZ
+                        580D ?setWeight@QFont@@QEAAXH@Z
+                        5950 ?style@QFont@@QEBA?AW4Style@1@XZ
+                        5B7D ?underline@QFont@@QEBA_NXZ
+                        578C ?setUnderline@QFont@@QEAAX_N@Z
+                        593D ?strikeOut@QFont@@QEBA_NXZ
+                        573C ?setStrikeOut@QFont@@QEAAX_N@Z
+                          7D ??0QCursor@@QEAA@XZ
+                          7C ??0QCursor@@QEAA@W4CursorShape@Qt@@@Z
+                          79 ??0QCursor@@QEAA@AEBV0@@Z
+                         37C ??1QCursor@@QEAA@XZ
+                        5846 ?shape@QCursor@@QEBA?AW4CursorShape@Qt@@XZ
+                         1F5 ??0QPixmap@@QEAA@XZ
+                         1EF ??0QPixmap@@QEAA@AEBV0@@Z
+                         417 ??1QPixmap@@UEAA@XZ
+                        4D6F ?isNull@QPixmap@@QEBA_NXZ
+                        5279 ?qt_pixmapToWinHBITMAP@@YAPEAUHBITMAP__@@AEBVQPixmap@@H@Z
+                        5277 ?qt_pixmapFromWinHBITMAP@@YA?AVQPixmap@@PEAUHBITMAP__@@H@Z
+                        5300 ?red@QColor@@QEBAHXZ
+                          6C ??0QColor@@QEAA@XZ
+                          66 ??0QColor@@QEAA@HHHH@Z
+                          64 ??0QColor@@QEAA@AEBV0@@Z
+                          63 ??0QColor@@QEAA@$$QEAV0@@Z
+                         4B6 ??4QColor@@QEAAAEAV0@$$QEAV0@@Z
+                         545 ??4QPixmap@@QEAAAEAV0@$$QEAV0@@Z
+                         4CB ??4QFont@@QEAAAEAV0@$$QEAV0@@Z
+                          78 ??0QCursor@@QEAA@$$QEAV0@@Z
+                         4BD ??4QCursor@@QEAAAEAV0@$$QEAV0@@Z
+                        5BD6 ?validate@QRegExpValidator@@UEBA?AW4State@QValidator@@AEAVQString@@AEAH@Z
+                        5262 ?qt_metacast@QRegExpValidator@@UEAAPEAXPEBD@Z
+                        521E ?qt_metacall@QRegExpValidator@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        4F67 ?metaObject@QRegExpValidator@@UEBAPEBUQMetaObject@@XZ
+                         E48 ?fixup@QValidator@@UEBAXAEAVQString@@@Z
+                         446 ??1QRegExpValidator@@UEAA@XZ
+                         256 ??0QRegExpValidator@@QEAA@AEBVQRegExp@@PEAVQObject@@@Z
+                        56AD ?setPointSize@QFont@@QEAAXH@Z
+                        5556 ?setFamily@QFont@@QEAAXAEBVQString@@@Z
+                         38D ??1QFont@@QEAA@XZ
+                          A4 ??0QFont@@QEAA@XZ
+                         4B7 ??4QColor@@QEAAAEAV0@AEBV0@@Z
+                        510A ?platformNativeInterface@QGuiApplication@@SAPEAVQPlatformNativeInterface@@XZ
+
+    Qt5Widgets.dll
+             140024CF8 Import Address Table
+             14002F568 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         EDC ?itemAt@QFormLayout@@UEBAPEAVQLayoutItem@@H@Z
+                        1866 ?setFocus@QWidget@@QEAAXW4FocusReason@Qt@@@Z
+                          CE ??0QListWidgetItem@@QEAA@PEAVQListWidget@@H@Z
+                         216 ??1QListWidgetItem@@UEAA@XZ
+                        1B5E ?setText@QListWidgetItem@@QEAAXAEBVQString@@@Z
+                         DA5 ?insertItem@QListWidget@@QEAAXHPEAVQListWidgetItem@@@Z
+                        1E46 ?takeItem@QListWidget@@QEAAPEAVQListWidgetItem@@H@Z
+                         7B5 ?count@QListWidget@@QEBAHXZ
+                         821 ?currentRow@QListWidget@@QEBAHXZ
+                         2DA ??MQListWidgetItem@@UEBA_NAEBV0@@Z
+                         707 ?clone@QListWidgetItem@@UEBAPEAV1@XZ
+                         998 ?data@QListWidgetItem@@UEBA?AVQVariant@@H@Z
+                        14EB ?read@QListWidgetItem@@UEAAXAEAVQDataStream@@@Z
+                        1DB6 ?staticMetaObject@QWidget@@2UQMetaObject@@B
+                        1385 ?qt_metacall@QMainWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        140F ?qt_metacast@QMainWindow@@UEAAPEAXPEBD@Z
+                        1D7A ?staticMetaObject@QMainWindow@@2UQMetaObject@@B
+                        2148 ?widget@QLayoutItem@@UEAAPEAVQWidget@@XZ
+                        2136 ?wheelEvent@QListView@@MEAAXPEAVQWheelEvent@@@Z
+                        2130 ?wheelEvent@QComboBox@@MEAAXPEAVQWheelEvent@@@Z
+                        2117 ?visualRect@QListView@@UEBA?AVQRect@@AEBVQModelIndex@@@Z
+                        20FD ?viewportSizeHint@QListView@@MEBA?AVQSize@@XZ
+                        20F3 ?viewportEvent@QAbstractItemView@@MEAA_NPEAVQEvent@@@Z
+                        20EF ?viewOptions@QListView@@MEBA?AVQStyleOptionViewItem@@XZ
+                        20E1 ?verticalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
+                        20DF ?verticalScrollbarAction@QAbstractItemView@@MEAAXH@Z
+                        20D6 ?verticalOffset@QListView@@MEBAHXZ
+                        2084 ?updateGeometries@QListView@@MEAAXXZ
+                        2078 ?updateEditorGeometries@QAbstractItemView@@MEAAXXZ
+                        2077 ?updateEditorData@QAbstractItemView@@MEAAXXZ
+                        1EA6 ?timerEvent@QMenuBar@@MEAAXPEAVQTimerEvent@@@Z
+                        1EA2 ?timerEvent@QListView@@MEAAXPEAVQTimerEvent@@@Z
+                        1E9C ?timerEvent@QAbstractButton@@MEAAXPEAVQTimerEvent@@@Z
+                        1E3F ?takeAt@QFormLayout@@UEAAPEAVQLayoutItem@@H@Z
+                        1DF7 ?supportedDropActions@QListWidget@@MEBA?AV?$QFlags@W4DropAction@Qt@@@@XZ
+                        1D29 ?startDrag@QListView@@MEAAXV?$QFlags@W4DropAction@Qt@@@@@Z
+                        1D00 ?spacerItem@QLayoutItem@@UEAAPEAVQSpacerItem@@XZ
+                        1CD4 ?sizeHintForRow@QAbstractItemView@@UEBAHH@Z
+                        1CD0 ?sizeHintForColumn@QAbstractItemView@@UEBAHH@Z
+                        1CCB ?sizeHint@QWidget@@UEBA?AVQSize@@XZ
+                        1CBB ?sizeHint@QPushButton@@UEBA?AVQSize@@XZ
+                        1CB8 ?sizeHint@QMenuBar@@UEBA?AVQSize@@XZ
+                        1CB3 ?sizeHint@QLineEdit@@UEBA?AVQSize@@XZ
+                        1CB2 ?sizeHint@QLabel@@UEBA?AVQSize@@XZ
+                        1CA5 ?sizeHint@QFormLayout@@UEBA?AVQSize@@XZ
+                        1C9E ?sizeHint@QComboBox@@UEBA?AVQSize@@XZ
+                        1C98 ?sizeHint@QAbstractScrollArea@@UEBA?AVQSize@@XZ
+                        1C75 ?showPopup@QComboBox@@UEAAXXZ
+                        1C60 ?showEvent@QStatusBar@@MEAAXPEAVQShowEvent@@@Z
+                        1C54 ?showEvent@QComboBox@@MEAAXPEAVQShowEvent@@@Z
+                        1C30 ?setupViewport@QAbstractScrollArea@@UEAAXPEAVQWidget@@@Z
+                        1BE0 ?setVisible@QMenuBar@@UEAAX_N@Z
+                        1ABD ?setSelectionModel@QAbstractItemView@@UEAAXPEAVQItemSelectionModel@@@Z
+                        1AB2 ?setSelection@QListView@@MEAAXAEBVQRect@@V?$QFlags@W4SelectionFlag@QItemSelectionModel@@@@@Z
+                        1A6F ?setRootIndex@QListView@@UEAAXAEBVQModelIndex@@@Z
+                        199E ?setModel@QListWidget@@EEAAXPEAVQAbstractItemModel@@@Z
+                        171B ?setBackgroundColor@QListWidgetItem@@UEAAXAEBVQColor@@@Z
+                        17CC ?setData@QListWidgetItem@@UEAAXHAEBVQVariant@@@Z
+                        218C ?write@QListWidgetItem@@UEBAXAEAVQDataStream@@@Z
+                        1C16 ?setWindowTitle@QWidget@@QEAAXAEBVQString@@@Z
+                        1C4E ?show@QWidget@@QEAAXXZ
+                         217 ??1QMainWindow@@UEAA@XZ
+                          17 ??0QApplication@@QEAA@AEAHPEAPEADH@Z
+                         1AF ??1QApplication@@UEAA@XZ
+                         B19 ?exec@QApplication@@SAHXZ
+                         195 ??0QWidget@@QEAA@PEAV0@V?$QFlags@W4WindowType@Qt@@@@@Z
+                         275 ??1QWidget@@UEAA@XZ
+                        206B ?update@QWidget@@QEAAXXZ
+                         4D8 ?actionEvent@QWidget@@MEAAXPEAVQActionEvent@@@Z
+                         691 ?changeEvent@QWidget@@MEAAXPEAVQEvent@@@Z
+                         718 ?closeEvent@QWidget@@MEAAXPEAVQCloseEvent@@@Z
+                         797 ?contextMenuEvent@QWidget@@MEAAXPEAVQContextMenuEvent@@@Z
+                         9C9 ?devType@QWidget@@UEBAHXZ
+                         A1D ?dragEnterEvent@QWidget@@MEAAXPEAVQDragEnterEvent@@@Z
+                         A29 ?dragLeaveEvent@QWidget@@MEAAXPEAVQDragLeaveEvent@@@Z
+                         A37 ?dragMoveEvent@QWidget@@MEAAXPEAVQDragMoveEvent@@@Z
+                         A72 ?dropEvent@QWidget@@MEAAXPEAVQDropEvent@@@Z
+                         AB9 ?enterEvent@QWidget@@MEAAXPEAVQEvent@@@Z
+                         B00 ?event@QWidget@@MEAA_NPEAVQEvent@@@Z
+                         B98 ?focusInEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
+                         BA9 ?focusNextPrevChild@QWidget@@MEAA_N_N@Z
+                         BBE ?focusOutEvent@QWidget@@MEAAXPEAVQFocusEvent@@@Z
+                         C6C ?hasHeightForWidth@QWidget@@UEBA_NXZ
+                         CAB ?hideEvent@QWidget@@MEAAXPEAVQHideEvent@@@Z
+                         D48 ?initPainter@QWidget@@MEBAXPEAVQPainter@@@Z
+                         D7F ?inputMethodEvent@QWidget@@MEAAXPEAVQInputMethodEvent@@@Z
+                         D8F ?inputMethodQuery@QWidget@@UEBA?AVQVariant@@W4InputMethodQuery@Qt@@@Z
+                         F60 ?keyPressEvent@QWidget@@MEAAXPEAVQKeyEvent@@@Z
+                         F6D ?keyReleaseEvent@QWidget@@MEAAXPEAVQKeyEvent@@@Z
+                         FA0 ?leaveEvent@QWidget@@MEAAXPEAVQEvent@@@Z
+                        10DF ?metric@QWidget@@MEBAHW4PaintDeviceMetric@QPaintDevice@@@Z
+                        1121 ?minimumSizeHint@QWidget@@UEBA?AVQSize@@XZ
+                        114B ?mouseDoubleClickEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+                        116B ?mouseMoveEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+                        118D ?mousePressEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+                        11AB ?mouseReleaseEvent@QWidget@@MEAAXPEAVQMouseEvent@@@Z
+                        11C0 ?moveEvent@QWidget@@MEAAXPEAVQMoveEvent@@@Z
+                        11CE ?nativeEvent@QWidget@@MEAA_NAEBVQByteArray@@PEAXPEAJ@Z
+                        1899 ?setGeometry@QFormLayout@@UEAAXAEBVQRect@@@Z
+                        16B6 ?selectionCommand@QAbstractItemView@@MEBA?AV?$QFlags@W4SelectionFlag@QItemSelectionModel@@@@AEBVQModelIndex@@PEBVQEvent@@@Z
+                        16AF ?selectionChanged@QListView@@MEAAXAEBVQItemSelection@@0@Z
+                        169A ?selectedIndexes@QListView@@MEBA?AV?$QList@VQModelIndex@@@@XZ
+                        1681 ?selectAll@QAbstractItemView@@UEAAXXZ
+                        1655 ?scrollTo@QListView@@UEAAXAEBVQModelIndex@@W4ScrollHint@QAbstractItemView@@@Z
+                        1649 ?scrollContentsBy@QListView@@MEAAXHH@Z
+                        1607 ?rowsInserted@QListView@@MEAAXAEBVQModelIndex@@HH@Z
+                        1602 ?rowsAboutToBeRemoved@QListView@@MEAAXAEBVQModelIndex@@HH@Z
+                        15A4 ?resizeEvent@QStatusBar@@MEAAXPEAVQResizeEvent@@@Z
+                        159B ?resizeEvent@QMenuBar@@MEAAXPEAVQResizeEvent@@@Z
+                        1598 ?resizeEvent@QListView@@MEAAXPEAVQResizeEvent@@@Z
+                        1590 ?resizeEvent@QComboBox@@MEAAXPEAVQResizeEvent@@@Z
+                        1568 ?reset@QListView@@UEAAXXZ
+                        144A ?qt_metacast@QWidget@@UEAAPEAXPEBD@Z
+                        1441 ?qt_metacast@QToolBar@@UEAAPEAXPEBD@Z
+                        1432 ?qt_metacast@QStatusBar@@UEAAPEAXPEBD@Z
+                        1423 ?qt_metacast@QPushButton@@UEAAPEAXPEBD@Z
+                        1413 ?qt_metacast@QMenuBar@@UEAAPEAXPEBD@Z
+                        140E ?qt_metacast@QListWidget@@UEAAPEAXPEBD@Z
+                        140C ?qt_metacast@QLineEdit@@UEAAPEAXPEBD@Z
+                        140A ?qt_metacast@QLabel@@UEAAPEAXPEBD@Z
+                        13ED ?qt_metacast@QFormLayout@@UEAAPEAXPEBD@Z
+                        13D7 ?qt_metacast@QComboBox@@UEAAPEAXPEBD@Z
+                        13CE ?qt_metacast@QAction@@UEAAPEAXPEBD@Z
+                        13C0 ?qt_metacall@QWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        13B7 ?qt_metacall@QToolBar@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        13A8 ?qt_metacall@QStatusBar@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        1399 ?qt_metacall@QPushButton@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        1389 ?qt_metacall@QMenuBar@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        1384 ?qt_metacall@QListWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        1382 ?qt_metacall@QLineEdit@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        1380 ?qt_metacall@QLabel@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        1363 ?qt_metacall@QFormLayout@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        134D ?qt_metacall@QComboBox@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        1344 ?qt_metacall@QAction@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+                        127F ?paintEvent@QWidget@@MEAAXPEAVQPaintEvent@@@Z
+                        127C ?paintEvent@QToolBar@@MEAAXPEAVQPaintEvent@@@Z
+                        1276 ?paintEvent@QStatusBar@@MEAAXPEAVQPaintEvent@@@Z
+                        126F ?paintEvent@QPushButton@@MEAAXPEAVQPaintEvent@@@Z
+                        126B ?paintEvent@QMenuBar@@MEAAXPEAVQPaintEvent@@@Z
+                        1267 ?paintEvent@QListView@@MEAAXPEAVQPaintEvent@@@Z
+                        1266 ?paintEvent@QLineEdit@@MEAAXPEAVQPaintEvent@@@Z
+                        1265 ?paintEvent@QLabel@@MEAAXPEAVQPaintEvent@@@Z
+                        125A ?paintEvent@QComboBox@@MEAAXPEAVQPaintEvent@@@Z
+                        11DB ?nextCheckState@QAbstractButton@@MEAAXXZ
+                        11B5 ?moveCursor@QListView@@MEAA?AVQModelIndex@@W4CursorAction@QAbstractItemView@@V?$QFlags@W4KeyboardModifier@Qt@@@@@Z
+                        11A0 ?mouseReleaseEvent@QMenuBar@@MEAAXPEAVQMouseEvent@@@Z
+                        119D ?mouseReleaseEvent@QListView@@MEAAXPEAVQMouseEvent@@@Z
+                        119C ?mouseReleaseEvent@QLineEdit@@MEAAXPEAVQMouseEvent@@@Z
+                        119B ?mouseReleaseEvent@QLabel@@MEAAXPEAVQMouseEvent@@@Z
+                        1192 ?mouseReleaseEvent@QComboBox@@MEAAXPEAVQMouseEvent@@@Z
+                        118E ?mouseReleaseEvent@QAbstractButton@@MEAAXPEAVQMouseEvent@@@Z
+                        1181 ?mousePressEvent@QMenuBar@@MEAAXPEAVQMouseEvent@@@Z
+                        117E ?mousePressEvent@QLineEdit@@MEAAXPEAVQMouseEvent@@@Z
+                        117D ?mousePressEvent@QLabel@@MEAAXPEAVQMouseEvent@@@Z
+                        1173 ?mousePressEvent@QComboBox@@MEAAXPEAVQMouseEvent@@@Z
+                        116F ?mousePressEvent@QAbstractItemView@@MEAAXPEAVQMouseEvent@@@Z
+                        116E ?mousePressEvent@QAbstractButton@@MEAAXPEAVQMouseEvent@@@Z
+                        1160 ?mouseMoveEvent@QMenuBar@@MEAAXPEAVQMouseEvent@@@Z
+                        115D ?mouseMoveEvent@QListView@@MEAAXPEAVQMouseEvent@@@Z
+                        115C ?mouseMoveEvent@QLineEdit@@MEAAXPEAVQMouseEvent@@@Z
+                        115B ?mouseMoveEvent@QLabel@@MEAAXPEAVQMouseEvent@@@Z
+                        114E ?mouseMoveEvent@QAbstractButton@@MEAAXPEAVQMouseEvent@@@Z
+                        1146 ?mouseDoubleClickEvent@QLineEdit@@MEAAXPEAVQMouseEvent@@@Z
+                        113E ?mouseDoubleClickEvent@QAbstractItemView@@MEAAXPEAVQMouseEvent@@@Z
+                        111A ?minimumSizeHint@QPushButton@@UEBA?AVQSize@@XZ
+                        1118 ?minimumSizeHint@QMenuBar@@UEBA?AVQSize@@XZ
+                        1115 ?minimumSizeHint@QLineEdit@@UEBA?AVQSize@@XZ
+                        1114 ?minimumSizeHint@QLabel@@UEBA?AVQSize@@XZ
+                        110E ?minimumSizeHint@QComboBox@@UEBA?AVQSize@@XZ
+                        110A ?minimumSizeHint@QAbstractScrollArea@@UEBA?AVQSize@@XZ
+                        1101 ?minimumSize@QFormLayout@@UEBA?AVQSize@@XZ
+                        10FC ?minimumHeightForWidth@QLayoutItem@@UEBAHH@Z
+                        10EB ?mimeTypes@QListWidget@@MEBA?AVQStringList@@XZ
+                        10E5 ?mimeData@QListWidget@@MEBAPEAVQMimeData@@V?$QList@PEAVQListWidgetItem@@@@@Z
+                        10D6 ?metaObject@QWidget@@UEBAPEBUQMetaObject@@XZ
+                        10CD ?metaObject@QToolBar@@UEBAPEBUQMetaObject@@XZ
+                        10BE ?metaObject@QStatusBar@@UEBAPEBUQMetaObject@@XZ
+                        10AF ?metaObject@QPushButton@@UEBAPEBUQMetaObject@@XZ
+                        109F ?metaObject@QMenuBar@@UEBAPEBUQMetaObject@@XZ
+                        109A ?metaObject@QListWidget@@UEBAPEBUQMetaObject@@XZ
+                        1098 ?metaObject@QLineEdit@@UEBAPEBUQMetaObject@@XZ
+                        1096 ?metaObject@QLabel@@UEBAPEBUQMetaObject@@XZ
+                        1079 ?metaObject@QFormLayout@@UEBAPEBUQMetaObject@@XZ
+                        1063 ?metaObject@QComboBox@@UEBAPEBUQMetaObject@@XZ
+                        105A ?metaObject@QAction@@UEBAPEBUQMetaObject@@XZ
+                        1037 ?maximumSize@QLayout@@UEBA?AVQSize@@XZ
+                         F9E ?leaveEvent@QMenuBar@@MEAAXPEAVQEvent@@@Z
+                         F8D ?layout@QLayout@@UEAAPEAV1@XZ
+                         F75 ?keyboardSearch@QAbstractItemView@@UEAAXAEBVQString@@@Z
+                         F64 ?keyReleaseEvent@QComboBox@@MEAAXPEAVQKeyEvent@@@Z
+                         F62 ?keyReleaseEvent@QAbstractButton@@MEAAXPEAVQKeyEvent@@@Z
+                         F5A ?keyPressEvent@QPushButton@@MEAAXPEAVQKeyEvent@@@Z
+                         F57 ?keyPressEvent@QMenuBar@@MEAAXPEAVQKeyEvent@@@Z
+                         F54 ?keyPressEvent@QLineEdit@@MEAAXPEAVQKeyEvent@@@Z
+                         F53 ?keyPressEvent@QLabel@@MEAAXPEAVQKeyEvent@@@Z
+                         F4A ?keyPressEvent@QComboBox@@MEAAXPEAVQKeyEvent@@@Z
+                         F45 ?keyPressEvent@QAbstractItemView@@MEAAXPEAVQKeyEvent@@@Z
+                        211D ?visualRegionForSelection@QListView@@MEBA?AVQRegion@@AEBVQItemSelection@@@Z
+                         E5D ?isIndexHidden@QListView@@MEBA_NAEBVQModelIndex@@@Z
+                         E37 ?isEmpty@QLayout@@UEBA_NXZ
+                         DEA ?invalidate@QFormLayout@@UEAAXXZ
+                         D8A ?inputMethodQuery@QLineEdit@@UEBA?AVQVariant@@W4InputMethodQuery@Qt@@@Z
+                         D84 ?inputMethodQuery@QComboBox@@UEBA?AVQVariant@@W4InputMethodQuery@Qt@@@Z
+                         D82 ?inputMethodQuery@QAbstractItemView@@UEBA?AVQVariant@@W4InputMethodQuery@Qt@@@Z
+                         D7C ?inputMethodEvent@QLineEdit@@MEAAXPEAVQInputMethodEvent@@@Z
+                         D76 ?inputMethodEvent@QComboBox@@MEAAXPEAVQInputMethodEvent@@@Z
+                         D75 ?inputMethodEvent@QAbstractItemView@@MEAAXPEAVQInputMethodEvent@@@Z
+                         D2D ?indexOf@QLayout@@UEBAHPEAVQWidget@@@Z
+                         D24 ?indexAt@QListView@@UEBA?AVQModelIndex@@AEBVQPoint@@@Z
+                         CDE ?horizontalScrollbarValueChanged@QAbstractItemView@@MEAAXH@Z
+                         CDB ?horizontalScrollbarAction@QAbstractItemView@@MEAAXH@Z
+                         CD2 ?horizontalOffset@QListView@@MEBAHXZ
+                         CC0 ?hitButton@QAbstractButton@@MEBA_NAEBVQPoint@@@Z
+                         CAD ?hidePopup@QComboBox@@UEAAXXZ
+                         CA3 ?hideEvent@QComboBox@@MEAAXPEAVQHideEvent@@@Z
+                         C8E ?heightForWidth@QWidget@@UEBAHH@Z
+                         C8B ?heightForWidth@QMenuBar@@UEBAHH@Z
+                         C89 ?heightForWidth@QLabel@@UEBAHH@Z
+                         C87 ?heightForWidth@QFormLayout@@UEBAHH@Z
+                         C66 ?hasHeightForWidth@QFormLayout@@UEBA_NXZ
+                         C00 ?geometry@QLayout@@UEBA?AVQRect@@XZ
+                         BBB ?focusOutEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
+                         BB9 ?focusOutEvent@QMenuBar@@MEAAXPEAVQFocusEvent@@@Z
+                         BB7 ?focusOutEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
+                         BB6 ?focusOutEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
+                         BAF ?focusOutEvent@QComboBox@@MEAAXPEAVQFocusEvent@@@Z
+                         BAD ?focusOutEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
+                         BA3 ?focusNextPrevChild@QLabel@@MEAA_N_N@Z
+                         B9D ?focusNextPrevChild@QAbstractItemView@@MEAA_N_N@Z
+                         B96 ?focusInEvent@QPushButton@@MEAAXPEAVQFocusEvent@@@Z
+                         B94 ?focusInEvent@QMenuBar@@MEAAXPEAVQFocusEvent@@@Z
+                         B92 ?focusInEvent@QLineEdit@@MEAAXPEAVQFocusEvent@@@Z
+                         B91 ?focusInEvent@QLabel@@MEAAXPEAVQFocusEvent@@@Z
+                         B88 ?focusInEvent@QComboBox@@MEAAXPEAVQFocusEvent@@@Z
+                         B86 ?focusInEvent@QAbstractItemView@@MEAAXPEAVQFocusEvent@@@Z
+                         B29 ?expandingDirections@QFormLayout@@UEBA?AV?$QFlags@W4Orientation@Qt@@@@XZ
+                         B10 ?eventFilter@QMenuBar@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
+                         B05 ?eventFilter@QAbstractScrollArea@@MEAA_NPEAVQObject@@PEAVQEvent@@@Z
+                         AFC ?event@QToolBar@@MEAA_NPEAVQEvent@@@Z
+                         AF5 ?event@QStatusBar@@MEAA_NPEAVQEvent@@@Z
+                         AE8 ?event@QPushButton@@MEAA_NPEAVQEvent@@@Z
+                         AE2 ?event@QMenuBar@@MEAA_NPEAVQEvent@@@Z
+                         ADE ?event@QMainWindow@@MEAA_NPEAVQEvent@@@Z
+                         ADD ?event@QListWidget@@MEAA_NPEAVQEvent@@@Z
+                         ADB ?event@QLineEdit@@UEAA_NPEAVQEvent@@@Z
+                         ADA ?event@QLabel@@MEAA_NPEAVQEvent@@@Z
+                         AC6 ?event@QComboBox@@UEAA_NPEAVQEvent@@@Z
+                         AC2 ?event@QAction@@MEAA_NPEAVQEvent@@@Z
+                         A88 ?editorDestroyed@QAbstractItemView@@MEAAXPEAVQObject@@@Z
+                         A7D ?edit@QAbstractItemView@@MEAA_NAEBVQModelIndex@@W4EditTrigger@1@PEAVQEvent@@@Z
+                         A76 ?dropMimeData@QListWidget@@MEAA_NHPEBVQMimeData@@W4DropAction@Qt@@@Z
+                         A6D ?dropEvent@QListWidget@@UEAAXPEAVQDropEvent@@@Z
+                         A6B ?dropEvent@QLineEdit@@MEAAXPEAVQDropEvent@@@Z
+                         A33 ?dragMoveEvent@QListView@@MEAAXPEAVQDragMoveEvent@@@Z
+                         A32 ?dragMoveEvent@QLineEdit@@MEAAXPEAVQDragMoveEvent@@@Z
+                         A26 ?dragLeaveEvent@QListView@@MEAAXPEAVQDragLeaveEvent@@@Z
+                         A25 ?dragLeaveEvent@QLineEdit@@MEAAXPEAVQDragLeaveEvent@@@Z
+                         A1A ?dragEnterEvent@QLineEdit@@MEAAXPEAVQDragEnterEvent@@@Z
+                         A13 ?dragEnterEvent@QAbstractItemView@@MEAAXPEAVQDragEnterEvent@@@Z
+                         9E6 ?doItemsLayout@QListView@@UEAAXXZ
+                         99D ?dataChanged@QListView@@MEAAXAEBVQModelIndex@@0AEBV?$QVector@H@@@Z
+                         7F1 ?currentChanged@QListView@@MEAAXAEBVQModelIndex@@0@Z
+                         7CE ?createPopupMenu@QMainWindow@@UEAAPEAVQMenu@@XZ
+                         7AF ?count@QFormLayout@@UEBAHXZ
+                         79A ?controlTypes@QLayout@@UEBA?AV?$QFlags@W4ControlType@QSizePolicy@@@@XZ
+                         792 ?contextMenuEvent@QMainWindow@@MEAAXPEAVQContextMenuEvent@@@Z
+                         791 ?contextMenuEvent@QLineEdit@@MEAAXPEAVQContextMenuEvent@@@Z
+                         790 ?contextMenuEvent@QLabel@@MEAAXPEAVQContextMenuEvent@@@Z
+                         789 ?contextMenuEvent@QComboBox@@MEAAXPEAVQContextMenuEvent@@@Z
+                         787 ?contextMenuEvent@QAbstractScrollArea@@MEAAXPEAVQContextMenuEvent@@@Z
+                         760 ?commitData@QAbstractItemView@@MEAAXPEAVQWidget@@@Z
+                         710 ?closeEditor@QAbstractItemView@@MEAAXPEAVQWidget@@W4EndEditHint@QAbstractItemDelegate@@@Z
+                         6AF ?childEvent@QLayout@@MEAAXPEAVQChildEvent@@@Z
+                         69E ?checkStateSet@QAbstractButton@@MEAAXXZ
+                         68E ?changeEvent@QToolBar@@MEAAXPEAVQEvent@@@Z
+                         685 ?changeEvent@QMenuBar@@MEAAXPEAVQEvent@@@Z
+                         682 ?changeEvent@QLineEdit@@MEAAXPEAVQEvent@@@Z
+                         681 ?changeEvent@QLabel@@MEAAXPEAVQEvent@@@Z
+                         67E ?changeEvent@QFrame@@MEAAXPEAVQEvent@@@Z
+                         678 ?changeEvent@QComboBox@@MEAAXPEAVQEvent@@@Z
+                         674 ?changeEvent@QAbstractButton@@MEAAXPEAVQEvent@@@Z
+                         534 ?addItem@QFormLayout@@UEAAXPEAVQLayoutItem@@@Z
+                         4D6 ?actionEvent@QToolBar@@MEAAXPEAVQActionEvent@@@Z
+                         4D5 ?actionEvent@QMenuBar@@MEAAXPEAVQActionEvent@@@Z
+                         C2E ?getSaveFileName@QFileDialog@@SA?AVQString@@PEAVQWidget@@AEBV2@11PEAV2@V?$QFlags@W4Option@QFileDialog@@@@@Z
+                         4AF ?about@QMessageBox@@SAXPEAVQWidget@@AEBVQString@@1@Z
+                        2121 ?warning@QMessageBox@@SA?AW4StandardButton@1@PEAVQWidget@@AEBVQString@@1V?$QFlags@W4StandardButton@QMessageBox@@@@W421@@Z
+                         268 ??1QToolBar@@UEAA@XZ
+                         178 ??0QToolBar@@QEAA@PEAVQWidget@@@Z
+                         23C ??1QStatusBar@@UEAA@XZ
+                         10F ??0QStatusBar@@QEAA@PEAVQWidget@@@Z
+                         22B ??1QPushButton@@UEAA@XZ
+                          F0 ??0QPushButton@@QEAA@PEAVQWidget@@@Z
+                        1B59 ?setText@QAbstractButton@@QEAAXAEBVQString@@@Z
+                         21B ??1QMenuBar@@UEAA@XZ
+                          D5 ??0QMenuBar@@QEAA@PEAVQWidget@@@Z
+                         215 ??1QListWidget@@UEAA@XZ
+                          CA ??0QListWidget@@QEAA@PEAVQWidget@@@Z
+                        1B5D ?setText@QLineEdit@@QEAAXAEBVQString@@@Z
+                        1BB9 ?setValidator@QLineEdit@@QEAAXPEBVQValidator@@@Z
+                        1E5D ?text@QLineEdit@@QEBA?AVQString@@XZ
+                         213 ??1QLineEdit@@UEAA@XZ
+                          C7 ??0QLineEdit@@QEAA@PEAVQWidget@@@Z
+                        1B5C ?setText@QLabel@@QEAAXAEBVQString@@@Z
+                         20F ??1QLabel@@UEAA@XZ
+                          BD ??0QLabel@@QEAA@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z
+                        1BF2 ?setWidget@QFormLayout@@QEAAXHW4ItemRole@1@PEAVQWidget@@@Z
+                        1AFD ?setSpacing@QFormLayout@@QEAAXH@Z
+                        1BC8 ?setVerticalSpacing@QFormLayout@@QEAAXH@Z
+                         1D2 ??1QFormLayout@@UEAA@XZ
+                          55 ??0QFormLayout@@QEAA@PEAVQWidget@@@Z
+                        1786 ?setContentsMargins@QLayout@@QEAAXHHHH@Z
+                         6D0 ?clear@QComboBox@@QEAAXXZ
+                         DA8 ?insertItems@QComboBox@@QEAAXHAEBVQStringList@@@Z
+                         827 ?currentText@QComboBox@@QEBA?AVQString@@XZ
+                         1B8 ??1QComboBox@@UEAA@XZ
+                          25 ??0QComboBox@@QEAA@PEAVQWidget@@@Z
+                        1B5A ?setText@QAction@@QEAAXAEBVQString@@@Z
+                         1AC ??1QAction@@UEAA@XZ
+                          13 ??0QAction@@QEAA@PEAVQObject@@@Z
+                         573 ?addToolBar@QMainWindow@@QEAAXW4ToolBarArea@Qt@@PEAVQToolBar@@@Z
+                        174C ?setCentralWidget@QMainWindow@@QEAAXPEAVQWidget@@@Z
+                        1B13 ?setStatusBar@QMainWindow@@QEAAXPEAVQStatusBar@@@Z
+                        1979 ?setMenuBar@QMainWindow@@QEAAXPEAVQMenuBar@@@Z
+                          CF ??0QMainWindow@@QEAA@PEAVQWidget@@V?$QFlags@W4WindowType@Qt@@@@@Z
+                        18A7 ?setGeometry@QWidget@@QEAAXAEBVQRect@@@Z
+                        1583 ?resize@QWidget@@QEAAXHH@Z
+                        1B29 ?setStyleSheet@QWidget@@QEAAXAEBVQString@@@Z
+                        187D ?setFont@QWidget@@QEAAXAEBVQFont@@@Z
+                        213C ?wheelEvent@QWidget@@MEAAXPEAVQWheelEvent@@@Z
+                        1E38 ?tabletEvent@QWidget@@MEAAXPEAVQTabletEvent@@@Z
+                        1C65 ?showEvent@QWidget@@MEAAXPEAVQShowEvent@@@Z
+                        1C41 ?sharedPainter@QWidget@@MEBAPEAVQPainter@@XZ
+                        1BE3 ?setVisible@QWidget@@UEAAX_N@Z
+                        15A8 ?resizeEvent@QWidget@@MEAAXPEAVQResizeEvent@@@Z
+                        14F8 ?redirected@QWidget@@MEBAPEAVQPaintDevice@@PEAVQPoint@@@Z
+                        1256 ?paintEngine@QWidget@@UEBAPEAVQPaintEngine@@XZ
+
+    KERNEL32.dll
+             140024000 Import Address Table
+             14002E870 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         524 SetEvent
+                         4CA ResetEvent
+                         5E7 WaitForSingleObjectEx
+                         27E GetModuleHandleW
+                         2B5 GetProcAddress
+                         4D3 RtlCaptureContext
+                         4DA RtlLookupFunctionEntry
+                         4E1 RtlVirtualUnwind
+                         5BC UnhandledExceptionFilter
+                         57B SetUnhandledExceptionFilter
+                         21D GetCurrentProcess
+                         59A TerminateProcess
+                         389 IsProcessorFeaturePresent
+                         382 IsDebuggerPresent
+                         2D7 GetStartupInfoW
+                         450 QueryPerformanceCounter
+                         21E GetCurrentProcessId
+                         368 InitializeCriticalSectionAndSpinCount
+                         2F0 GetSystemTimeAsFileTime
+                         36C InitializeSListHead
+                         1DD GetCommandLineW
+                         3D2 LocalFree
+                         60D WideCharToMultiByte
+                          C3 CreateFileA
+                         477 ReadFile
+                          86 CloseHandle
+                         267 GetLastError
+                         29F GetOverlappedResult
+                          BF CreateEventW
+                          84 ClearCommError
+                         587 SetupComm
+                         441 PurgeComm
+                         4EE SetCommState
+                         4EF SetCommTimeouts
+                         111 DeleteCriticalSection
+                         3C0 LeaveCriticalSection
+                         135 EnterCriticalSection
+                         222 GetCurrentThreadId
+
+    ole32.dll
+             140025908 Import Address Table
+             140030178 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         1FB StgCreateDocfileOnILockBytes
+                           E CLSIDFromProgID
+                          A5 CreateILockBytesOnHGlobal
+                         193 OleCreateFromFile
+                          3B CoFreeUnusedLibraries
+                          44 CoGetClassObject
+                         1C8 OleUninitialize
+                         1AB OleInitialize
+                          2B CoCreateInstance
+
+    OLEAUT32.dll
+             1400241D8 Import Address Table
+             14002EA48 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                             Ordinal   420
+                             Ordinal   411
+                             Ordinal     9
+                             Ordinal    77
+                             Ordinal    26
+                             Ordinal    25
+                             Ordinal    24
+                             Ordinal    23
+                             Ordinal    20
+                             Ordinal    19
+                             Ordinal    17
+                             Ordinal    16
+                             Ordinal    15
+                             Ordinal     4
+                             Ordinal   419
+                             Ordinal   185
+                             Ordinal   184
+                             Ordinal    35
+                             Ordinal   161
+                             Ordinal     8
+                             Ordinal     6
+
+    MSVCP140.dll
+             140024138 Import Address Table
+             14002E9A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         546 ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z
+                         543 ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z
+                         51B ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+                         4FD ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+                         4D5 ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ
+                         4B5 ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z
+                         3F6 ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z
+                         27F ?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+                         228 ?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+                          80 ??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+                          13 ??0?$basic_iostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@@Z
+                          CC ??5?$basic_istream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@AEAH@Z
+                           C ??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ
+                          7D ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ
+                         24A ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+                          89 ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ
+                          2F ??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ
+                         28E ?_Xlength_error@std@@YAXPEBD@Z
+                         28B ?_Xbad_alloc@std@@YAXXZ
+
+    VCRUNTIME140.dll
+             140025798 Import Address Table
+             140030008 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3E memset
+                           1 _CxxThrowException
+                          22 __std_exception_destroy
+                          21 __std_exception_copy
+                          23 __std_terminate
+                           E __CxxFrameHandler3
+                          3C memcpy
+                          3D memmove
+                          36 _purecall
+                          3B memcmp
+                           8 __C_specific_handler
+
+    api-ms-win-crt-math-l1-1-0.dll
+             140025830 Import Address Table
+             1400300A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          FE pow
+                           9 __setusermatherr
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             140025848 Import Address Table
+             1400300B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C _register_onexit_function
+                          1E _crt_atexit
+                          18 _configure_narrow_argv
+                          39 _invalid_parameter_noinfo_noreturn
+                          33 _initialize_narrow_environment
+                          16 _cexit
+                          40 _seh_filter_exe
+                          42 _set_app_type
+                          67 terminate
+                          2B _get_narrow_winmain_command_line
+                          36 _initterm
+                          37 _initterm_e
+                          55 exit
+                          23 _exit
+                          3D _register_thread_local_exe_atexit_callback
+                          15 _c_exit
+                          34 _initialize_onexit_table
+
+    api-ms-win-crt-heap-l1-1-0.dll
+             1400257F8 Import Address Table
+             140030068 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 _set_new_mode
+                          18 free
+                           8 _callnewh
+                          19 malloc
+
+    api-ms-win-crt-string-l1-1-0.dll
+             1400258F0 Import Address Table
+             140030160 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          6F isupper
+                          98 toupper
+
+    api-ms-win-crt-stdio-l1-1-0.dll
+             1400258D8 Import Address Table
+             140030148 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 __p__commode
+                          54 _set_fmode
+
+    api-ms-win-crt-locale-l1-1-0.dll
+             140025820 Import Address Table
+             140030090 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 _configthreadlocale
+
+    SHELL32.dll
+             140025788 Import Address Table
+             14002FFF8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 CommandLineToArgvW
+
+  Summary
+
+        2000 .data
+        2000 .pdata
+       15000 .rdata
+        1000 .reloc
+       11000 .rsrc
+       23000 .text

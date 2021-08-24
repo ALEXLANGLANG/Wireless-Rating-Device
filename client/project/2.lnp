@@ -1,0 +1,9 @@
+"ADC.obj",
+"delay.obj",
+"Keypress.obj",
+"main.obj",
+"oled.obj",
+"SYN6288.obj",
+"USART.obj" 
+TO "2" 
+RAMSIZE(256) 

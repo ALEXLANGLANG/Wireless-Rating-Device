@@ -1,0 +1,243 @@
+C51 COMPILER V9.53.0.0   MAIN                                                              06/25/2019 09:51:01 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: d:\Keil_v5\C51\BIN\C51.EXE main.c COMPACT OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include "config.h"
+   2          #include "delay.h"
+   3          #include "USART.H"
+   4          #include "stdio.h"
+   5          #include "adc.h"
+   6          #include "Keypress.h"
+   7          #include "SYN6288.h"
+   8          #include "oled.h"
+*** WARNING C235 IN LINE 79 OF oled.h: parameter 1: different types
+   9          extern void SYN_FrameInfo(uint8_t Music,uint8_t *HZdata);
+  10          #define ID 0x01
+  11          void set_string(char* res,char ch,char dat){
+  12   1              res[0]  = 0xfe;
+  13   1              res[1] = 0x06;
+  14   1              res[2] = ID;
+  15   1              res[3] = ch;
+  16   1              res[4] = dat;
+  17   1              res[5] = 0x80;
+  18   1      }
+  19          int format(int dat){
+  20   1              float temp;
+  21   1              if(dat<=1){
+  22   2                      temp = 0;
+  23   2              }else{
+  24   2                      temp = (dat)/(1023.0);
+  25   2              }
+  26   1      
+  27   1              temp= temp*100;
+  28   1              
+  29   1              return (int)temp;
+  30   1      }
+  31          void main(){
+  32   1              char cnt = 0;
+  33   1              char buff[40];
+  34   1              int dat[6];
+  35   1              char send[6];
+  36   1              char flag[6];
+  37   1              P0M0 = 0;
+  38   1              P0M1 = 0;
+  39   1              OLED_Init();                    //初始化OLED  
+  40   1              OLED_Clear();           //清除屏幕
+  41   1              config_UART();
+  42   1              config_ADC();
+  43   1              EA = 1;
+  44   1              //SYN_FrameInfo(0,"飞音云电子");
+  45   1              OLED_ShowCHinese(0,0,0);//
+  46   1              OLED_ShowCHinese(18,0,1);//
+  47   1              OLED_ShowCHinese(36,0,2);//
+  48   1              OLED_ShowCHinese(54,0,3);//
+  49   1              OLED_ShowCHinese(72,0,4);//
+  50   1              sprintf(buff,"Channel: ");
+  51   1              OLED_ShowString(0,2,buff,16);
+  52   1              sprintf(buff,"Score: ");
+  53   1              OLED_ShowString(0,4,buff,16); 
+  54   1      //      
+C51 COMPILER V9.53.0.0   MAIN                                                              06/25/2019 09:51:01 PAGE 2   
+
+  55   1      //      OLED_ShowString(0,0,"Date:",16); 
+  56   1      //      OLED_ShowString(0,2,"channel:",16);     
+  57   1              while(1){
+  58   2                      if(!K1&&!flag[0]){
+  59   3      //                              PrintString1_cnt(send,6);
+  60   3                              dat[0] = Get_ADC10bitResult(0);
+  61   3                              dat[0] = format(dat[0]);
+  62   3                              sprintf(buff,"%d点%d",dat[0]/10,dat[0]%10);
+  63   3                              SYN_FrameInfo(0,buff);
+  64   3                              flag[0] = 1;
+  65   3                              sprintf(buff,"Channel: 1");
+  66   3                              OLED_ShowString(0,2,buff,16);
+  67   3                              sprintf(buff,"Score: %2.1f  ",dat[0]/10.0);
+  68   3                              OLED_ShowString(0,4,buff,16); 
+  69   3                              }else if(K1){
+  70   3                                      flag[0] = 0;
+  71   3                              }
+  72   2                      if(!K2&&!flag[1]){
+  73   3                              dat[1] = Get_ADC10bitResult(1);
+  74   3                              dat[1] = format(dat[1]);
+  75   3                              sprintf(buff,"%d点%d",dat[1]/10,dat[1]%10);
+  76   3                              SYN_FrameInfo(0,buff);
+  77   3                              flag[1] = 1;
+  78   3                              sprintf(buff,"Channel: 2");
+  79   3                              OLED_ShowString(0,2,buff,16);
+  80   3                              sprintf(buff,"Score: %2.1f  ",dat[1]/10.0);
+  81   3                              OLED_ShowString(0,4,buff,16); 
+  82   3                              }else if(K2){
+  83   3                                      flag[1] = 0;
+  84   3                              }
+  85   2                      if(!K3&&!flag[2]){
+  86   3                              dat[2] = Get_ADC10bitResult(2);
+  87   3                              dat[2] = format(dat[2]);
+  88   3                              sprintf(buff,"%d点%d",dat[2]/10,dat[2]%10);
+  89   3                              SYN_FrameInfo(0,buff);
+  90   3                              flag[2] = 1;
+  91   3                              sprintf(buff,"Channel: 3");
+  92   3                              OLED_ShowString(0,2,buff,16);
+  93   3                              sprintf(buff,"Score: %2.1f  ",dat[2]/10.0);
+  94   3                              OLED_ShowString(0,4,buff,16); 
+  95   3                              }else if(K3){
+  96   3                                      flag[2] = 0;
+  97   3                              }
+  98   2                      if(!K4&&!flag[3]){
+  99   3                              dat[3] = Get_ADC10bitResult(3);
+ 100   3                              dat[3] = format(dat[3]);
+ 101   3                              sprintf(buff,"%d点%d",dat[3]/10,dat[3]%10);
+ 102   3                              SYN_FrameInfo(0,buff);
+ 103   3                              flag[3] = 1;
+ 104   3                              sprintf(buff,"Channel: 4");
+ 105   3                              OLED_ShowString(0,2,buff,16);
+ 106   3                              sprintf(buff,"Score: %2.1f  ",dat[3]/10.0);
+ 107   3                              OLED_ShowString(0,4,buff,16); 
+ 108   3                              }else if(K4){
+ 109   3                                      flag[3] = 0;
+ 110   3                              }
+ 111   2                      if(!K5&&!flag[4]){
+ 112   3                              dat[4] = Get_ADC10bitResult(4);
+ 113   3                              dat[4] = format(dat[4]);
+ 114   3                              sprintf(buff,"%d点%d",dat[4]/10,dat[4]%10);
+ 115   3                              SYN_FrameInfo(0,buff);
+ 116   3                              flag[4] = 1;
+C51 COMPILER V9.53.0.0   MAIN                                                              06/25/2019 09:51:01 PAGE 3   
+
+ 117   3                              sprintf(buff,"Channel: 5");
+ 118   3                              OLED_ShowString(0,2,buff,16);
+ 119   3                              sprintf(buff,"Score: %2.1f  ",dat[4]/10.0);
+ 120   3                              OLED_ShowString(0,4,buff,16); 
+ 121   3                              }else if(K5){
+ 122   3                                      flag[4] = 0;
+ 123   3                              }
+ 124   2                      if(!K6&&!flag[5]){
+ 125   3                              dat[5] = Get_ADC10bitResult(5);
+ 126   3                              dat[5] = format(dat[5]);
+ 127   3                              sprintf(buff,"%d点%d",dat[5]/10,dat[5]%10);
+ 128   3                              SYN_FrameInfo(0,buff);
+ 129   3                              flag[5] = 1;
+ 130   3                              sprintf(buff,"Channel: 6");
+ 131   3                              OLED_ShowString(0,2,buff,16);
+ 132   3                              sprintf(buff,"Score: %2.1f  ",dat[5]/10.0);
+ 133   3                              OLED_ShowString(0,4,buff,16); 
+ 134   3                              }else if(K6){
+ 135   3                                      flag[5] = 0;
+ 136   3                              }
+ 137   2                      if(Read_KEY1_Release()){
+ 138   3                              dat[0] = Get_ADC10bitResult(0);
+ 139   3                              dat[0] = format(dat[0]);
+ 140   3                              set_string(send,1,dat[0]);
+ 141   3                              PrintString2_cnt(send,6);
+ 142   3                              sprintf(buff,"%d点%d已发送",dat[0]/10,dat[0]%10);
+ 143   3                              SYN_FrameInfo(0,buff);
+ 144   3                              sprintf(buff,"Channel: 1");
+ 145   3                              OLED_ShowString(0,2,buff,16);
+ 146   3                              sprintf(buff,"Score: %2.1f  ",dat[0]/10.0);
+ 147   3                              OLED_ShowString(0,4,buff,16); 
+ 148   3                              
+ 149   3                      }else if(Read_KEY2_Release()){
+ 150   3                              dat[1] = Get_ADC10bitResult(1);
+ 151   3                              dat[1] = format(dat[1]);\
+ 152   3                              set_string(send,2,dat[1]);
+ 153   3                              PrintString2_cnt(send,6);
+ 154   3                              sprintf(buff,"Channel: 2");
+ 155   3                              OLED_ShowString(0,2,buff,16);
+ 156   3                              sprintf(buff,"Score: %2.1f  ",dat[1]/10.0);
+ 157   3                              OLED_ShowString(0,4,buff,16); 
+ 158   3                              sprintf(buff,"%d点%d已发送",dat[1]/10,dat[1]%10);
+ 159   3                              SYN_FrameInfo(0,buff);
+ 160   3      
+ 161   3                      }else if(Read_KEY3_Release()){
+ 162   3                              dat[2] = Get_ADC10bitResult(2);
+ 163   3                              dat[2] = format(dat[2]);
+ 164   3                              set_string(send,3,dat[2]);
+ 165   3                              PrintString2_cnt(send,6);
+ 166   3                              sprintf(buff,"Channel: 3");
+ 167   3                              OLED_ShowString(0,2,buff,16);
+ 168   3                              sprintf(buff,"Score: %2.1f  ",dat[2]/10.0);
+ 169   3                              OLED_ShowString(0,4,buff,16); 
+ 170   3                              sprintf(buff,"%d点%d已发送",dat[2]/10,dat[2]%10);
+ 171   3                              SYN_FrameInfo(0,buff);
+ 172   3      
+ 173   3                      }else if(Read_KEY4_Release()){
+ 174   3                              dat[3] = Get_ADC10bitResult(3);
+ 175   3                              dat[3] = format(dat[3]);
+ 176   3                              set_string(send,4,dat[3]);
+ 177   3                              PrintString2_cnt(send,6);
+ 178   3                              sprintf(buff,"Channel: 4");
+C51 COMPILER V9.53.0.0   MAIN                                                              06/25/2019 09:51:01 PAGE 4   
+
+ 179   3                              OLED_ShowString(0,2,buff,16);
+ 180   3                              sprintf(buff,"Score: %2.1f  ",dat[3]/10.0);
+ 181   3                              OLED_ShowString(0,4,buff,16); 
+ 182   3                              sprintf(buff,"%d点%d已发送",dat[3]/10,dat[3]%10);
+ 183   3                              SYN_FrameInfo(0,buff);
+ 184   3      
+ 185   3                      }else if(Read_KEY5_Release()){
+ 186   3                              dat[4] = Get_ADC10bitResult(4);
+ 187   3                              dat[4] = format(dat[4]);        
+ 188   3                              set_string(send,5,dat[4]);
+ 189   3                              PrintString2_cnt(send,6);
+ 190   3                              sprintf(buff,"Channel: 5");
+ 191   3                              OLED_ShowString(0,2,buff,16);
+ 192   3                              sprintf(buff,"Score: %2.1f  ",dat[4]/10.0);
+ 193   3                              OLED_ShowString(0,4,buff,16); 
+ 194   3                              sprintf(buff,"%d点%d已发送",dat[4]/10,dat[4]%10);
+ 195   3                              SYN_FrameInfo(0,buff);
+ 196   3      
+ 197   3                      }else if(Read_KEY6_Release()){
+ 198   3                              dat[5] = Get_ADC10bitResult(5);
+ 199   3                              dat[5] = format(dat[5]);
+ 200   3                              set_string(send,6,dat[5]);
+ 201   3                              PrintString2_cnt(send,6);
+ 202   3                              sprintf(buff,"Channel: 6");
+ 203   3                              OLED_ShowString(0,2,buff,16);
+ 204   3                              sprintf(buff,"Score: %2.1f  ",dat[5]/10.0);
+ 205   3                              OLED_ShowString(0,4,buff,16); 
+ 206   3                              sprintf(buff,"%d点%d已发送",dat[5]/10,dat[5]%10);
+ 207   3                              SYN_FrameInfo(0,buff);
+ 208   3                      }
+ 209   2                      
+ 210   2                      
+ 211   2                      
+ 212   2              }
+ 213   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   2830    ----
+   CONSTANT SIZE    =    119    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----      74
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
