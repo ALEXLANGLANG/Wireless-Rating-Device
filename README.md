@@ -1,2 +1,9 @@
 # Wireless-Scoring-Board
-https://docs.google.com/viewer?url=${https://github.com/ALEXLANGLANG/Wireless-Rating-Device/blob/master/Slides.pdf}
+
+
+Main Problem: In Firmenich, there is a blind panel to help researchers analyze the components of products. As blind employees are not able to work by themselves, we need more assistants to do data collection. The whole process is error-prone and inefficient.
+
+Solution: We want to design a physical device that is easier for blind employee to give ratings and send the data to a host computer. It makes the whole process more accurate and efficient.
+
+Please refer to slides and report for more details.
+
